@@ -1,4 +1,6 @@
+
 """Ploting wordcounts."""
+
 import argparse
 import pandas as pd
 
@@ -11,9 +13,9 @@ def main(args):
    df['rank'] = df['word_frequency'].rank(ascending=False,
 										   method='max')
 
-   ax = df.plot.scatter(x='word_frequency',
-   y='inverse_rank',
-   figsize=[12, 6],
+   ax = df.plot.scatter(x='rank',
+   y='word_frequency',
+   figsize=[12, 6], loglog = True,
    grid=True)
    ax.figure.savefig(args.outfile)
 

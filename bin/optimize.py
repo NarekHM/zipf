@@ -1,4 +1,4 @@
-import numpy as np
+import numpy as np # import numpy
 from scipy.optimize import minimize_scalar
 import argparse
 

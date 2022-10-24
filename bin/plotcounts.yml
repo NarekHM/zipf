@@ -1,0 +1,3 @@
+axes.labelsize : x-large ## fontsizeofthex and ylabels
+xtick.labelsize : large ## fontsizeoftheticklabels
+ytick.labelsize : large ## fontsizeoftheticklabels
